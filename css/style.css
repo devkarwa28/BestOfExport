@@ -97,13 +97,14 @@ header nav .user {
 header nav .user img {
   margin: auto 16px;
 }
-header .header-main {
+
+.header-main {
   background: url(../images/header-bg.jpg) center no-repeat;
   background-size: cover;
   padding-top: 154px;
   padding-bottom: 134px;
 }
-header .header-main h1 {
+.header-main h1 {
   color: #ffffff;
   font-weight: 700;
   width: 705px;
@@ -111,23 +112,30 @@ header .header-main h1 {
   line-height: 60px;
   margin-bottom: 10px;
 }
-header .header-main p {
+.header-main p {
   width: 669px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
 }
-header .header-main button {
-  width: 142px;
-  height: 48px;
+.header-main button {
+  padding: 12px 24px;
+  color: #484548;
   border: 0px;
-  background: #ffffff;
   border-radius: 30px;
-  margin-top: 24px;
+  background-color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  transition: 200ms ease-in-out;
+  outline: none;
+  border: 1px solid white;
+}
+.header-main button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
 }
 
 .section-1 {
@@ -318,20 +326,21 @@ header .header-main button {
   color: #BB5036;
   border: 1px solid #BB5036;
 }
-.section-4 .sec4-box {
+
+.card-2 {
   margin-bottom: 48px;
 }
-.section-4 .sec4-box figure {
+.card-2 figure {
   margin-bottom: 20px;
 }
-.section-4 .sec4-box h2 {
+.card-2 h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #484548;
   margin-bottom: 8px;
 }
-.section-4 .sec4-box p {
+.card-2 p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -538,6 +547,98 @@ footer .footer-3 {
 }
 .disclaimer h1 a {
   color: #BB5036;
+}
+
+.explore-header {
+  background: url(../images/explore-header-bg.jpg) no-repeat;
+  padding: 63px 0px 59px 0px;
+}
+.explore-header h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+.explore-header p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.explore-header button {
+  padding: 12px 24px;
+  color: #484548;
+  border: 0px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 200ms ease-in-out;
+  outline: none;
+  border: 1px solid white;
+}
+.explore-header button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+}
+
+.section-explore-1 {
+  padding: 80px 0px 32px 0px;
+}
+.section-explore-1 h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  text-align: center;
+  color: #484548;
+  margin-bottom: 48px;
+}
+
+.section-explore-2 {
+  padding: 68px 0px 79px 0px;
+  background: #fafafa;
+}
+.section-explore-2 h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  text-align: center;
+  color: #484548;
+  margin-bottom: 48px;
+}
+
+.card-3 {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.4);
+  border-radius: 8px;
+}
+.card-3 img {
+  width: 100%;
+}
+.card-3 .card-3-content {
+  padding: 24px 21px 29px 24px;
+}
+.card-3 .card-3-content h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484548;
+  margin-bottom: 12px;
+}
+.card-3 .card-3-content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #5A5958;
+  margin-bottom: 0px;
+}
+
+.section-explore-3 {
+  padding: 80px 0px 32px 0px;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
