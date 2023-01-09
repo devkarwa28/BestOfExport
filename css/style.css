@@ -37,12 +37,29 @@ header nav ul {
 header nav ul li {
   margin: 0px 18px;
 }
+header nav ul li:hover a::after {
+  width: 100%;
+  left: 0;
+}
 header nav ul li a {
   text-decoration: none;
+  position: relative;
   color: #5A5958;
+  width: 100%;
+  left: 0;
 }
 header nav ul li a:hover {
   color: #BB5036;
+}
+header nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #BB5036;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
 }
 header nav .search-box {
   margin-left: 195px;
@@ -54,6 +71,11 @@ header nav .search-box input {
   border-right: 0px;
   padding-left: 16px;
   border-radius: 80px 0px 0px 80px;
+  outline: none;
+}
+header nav .search-box input:focus {
+  border: 1px solid #BB5036;
+  border-right: 0px;
 }
 header nav .search-box button {
   width: 38px;
@@ -424,6 +446,21 @@ header .header-main button {
   border: 1px solid #bdbcbb;
   border-radius: 50px;
   margin: auto 0px;
+  padding: 0px 150px 0px 30px;
+  outline: none;
+  color: #5A5958;
+}
+.section-7 .input-box input:focus {
+  border: 2px solid #BB5036;
+}
+.section-7 .input-box input::-moz-placeholder {
+  color: #5A5958;
+}
+.section-7 .input-box input:-ms-input-placeholder {
+  color: #5A5958;
+}
+.section-7 .input-box input::placeholder {
+  color: #5A5958;
 }
 .section-7 .input-box button {
   padding: 12px 24px;
@@ -498,4 +535,51 @@ footer .footer-3 {
   line-height: 16px;
   color: #000000;
   margin-bottom: 0px;
+}
+.disclaimer h1 a {
+  color: #BB5036;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .sm-none {
+    display: none !important;
+  }
+  header nav {
+    padding: 16px 0px;
+  }
+  header nav .offcanvas-btn {
+    background-color: transparent;
+    border: 0px;
+    color: #000000;
+    font-size: 22px;
+    margin-left: auto;
+  }
+  header nav ul {
+    margin-left: 10px;
+  }
+  header nav ul li {
+    margin: 18px 0px;
+  }
+  header .header-main {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  header .header-main h1 {
+    width: 100%;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  header .header-main p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  header .header-main button {
+    width: 120px;
+    height: 40px;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

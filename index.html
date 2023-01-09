@@ -20,25 +20,48 @@
     <!--header started -->
     <header class="container-fluid px-0">
         <nav>
-            <div class="container d-flex">
+            <div class="container d-flex justify-content-sm-between">
                 <figure class="mb-0">
                     <img src="images/Group 11.svg
                     " alt="">
                 </figure>
-                <ul class="d-xl-flex ps-0">
+                <button class="d-lg-none offcanvas-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0">
+
+                        <ul class="d-xl-flex ps-0">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="d-xl-flex ps-0 sm-none">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <div class="search-box">
+                <div class="search-box sm-none">
                     <input type="text" name="" id="" placeholder="Search Product">
                     <button>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
-                <div class="user">
+                <div class="user sm-none">
                     <img src="images/user.svg" alt="">
                     <img src="images/bag.svg" alt="" class="me-0">
                 </div>
@@ -371,7 +394,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="input-box position-relative">
-                        <input type="text">
+                        <input type="text" placeholder="Enter Email Address">
                         <button class="position-absolute">
                             Subscribe
                         </button>
@@ -443,7 +466,7 @@
         <div class="container">
             <div class="d-flex justify-content-between">
                 <h1>Copyright © 2021 Best of Export</h1>
-                <h1>Designed and Development by Micro Click</h1>
+                <h1>Designed and Development by <a href="">MicroClick Pvt Ltd.</a></h1>
             </div>
         </div>
     </div>
