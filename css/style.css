@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Archivo", sans-serif !important;
+  font-family: "Archivo" sans-serif !important;
 }
 
 .container {
@@ -349,8 +349,8 @@ header nav .user img {
 }
 
 .section-5 {
-  padding: 115px 0px 106px 0px;
   background: url(../images/sec5-bg.jpg);
+  padding: 115px 0px 106px 0px;
   background-size: cover;
 }
 .section-5 h1 {
@@ -550,7 +550,7 @@ footer .footer-3 {
 }
 
 .explore-header {
-  background: url(../images/explore-header-bg.jpg) no-repeat;
+  background: url(../images/explore-header-bg.jpg) no-repeat center;
   padding: 63px 0px 59px 0px;
 }
 .explore-header h1 {
@@ -639,6 +639,57 @@ footer .footer-3 {
 
 .section-explore-3 {
   padding: 80px 0px 32px 0px;
+}
+
+.section-about-1 {
+  padding: 80px 0px 60px 0px;
+}
+.section-about-1 img {
+  width: 100%;
+}
+.section-about-1 h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  color: #484548;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-about-1 .content {
+  padding-top: 16px;
+}
+.section-about-1 .content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #5A5958;
+}
+
+.section-about-2 {
+  padding: 40px 0px;
+  background: #f0f1f7;
+}
+.section-about-2 img {
+  width: 100%;
+}
+.section-about-2 .content h1 {
+  color: #484548;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 28px;
+}
+.section-about-2 .content h2 {
+  color: #BB5036;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+.section-about-2 .content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #5A5958;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
